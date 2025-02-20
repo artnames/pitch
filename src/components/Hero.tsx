@@ -14,6 +14,11 @@ const Hero = ({ onLearnMore }: HeroProps) => {
         transition={{ duration: 0.8 }}
         className="text-center"
       >
+        <img 
+          src="/lovable-uploads/13fbe3cd-7016-4a53-be8e-05a7dfb4d5e9.png"
+          alt="Artnames Logo"
+          className="h-16 md:h-20 mb-8 mx-auto"
+        />
         <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight">
           Innovation in Web3
         </h1>
