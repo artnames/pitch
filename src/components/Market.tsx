@@ -18,7 +18,7 @@ const Market = () => {
             </div>
             <div className="bg-blue-50 p-8 rounded-2xl">
               <h3 className="text-3xl font-bold mb-2 text-blue-600">Artnames</h3>
-              <p className="text-gray-600">Revolutionizing digital identity on Base with dynamic NFT integration</p>
+              <p className="text-gray-600">Revolutionizing digital identity across multiple chains with dynamic NFT integration</p>
             </div>
             <div className="bg-orange-50 p-8 rounded-2xl">
               <h3 className="text-3xl font-bold mb-2 text-orange-600">GenCo</h3>
