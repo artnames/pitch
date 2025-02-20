@@ -5,6 +5,7 @@ import Features from "../components/Features";
 import Problem from "../components/Problem";
 import Solution from "../components/Solution";
 import Market from "../components/Market";
+import Financial from "../components/Financial";
 import Team from "../components/Team";
 
 const Index = () => {
@@ -23,6 +24,7 @@ const Index = () => {
       <Problem />
       <Solution />
       <Market />
+      <Financial />
       <Team />
     </main>
   );
