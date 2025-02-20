@@ -7,22 +7,22 @@ const Financial = () => {
     {
       quarter: 'Q1',
       mints: 15000,
-      revenue: 300000,
+      revenue: 30000, // 15000 * $2
     },
     {
       quarter: 'Q2',
       mints: 25000,
-      revenue: 500000,
+      revenue: 50000, // 25000 * $2
     },
     {
       quarter: 'Q3',
       mints: 30000,
-      revenue: 600000,
+      revenue: 60000, // 30000 * $2
     },
     {
       quarter: 'Q4',
       mints: 30000,
-      revenue: 600000,
+      revenue: 60000, // 30000 * $2
     },
   ];
 
@@ -54,7 +54,7 @@ const Financial = () => {
               </li>
               <li className="flex items-start space-x-3">
                 <span className="mt-1.5 w-2 h-2 rounded-full bg-blue-500 flex-shrink-0"></span>
-                <span className="text-gray-700">Initial revenue projection: $200K - $2M</span>
+                <span className="text-gray-700">Initial revenue projection: $200K at $2 per mint</span>
               </li>
             </ul>
           </motion.div>
