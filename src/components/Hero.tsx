@@ -17,7 +17,7 @@ const Hero = ({ onLearnMore }: HeroProps) => {
         <img 
           src="/lovable-uploads/13fbe3cd-7016-4a53-be8e-05a7dfb4d5e9.png"
           alt="Artnames Logo"
-          className="h-16 md:h-20 mb-8 mx-auto"
+          className="h-24 md:h-32 mb-8 mx-auto" // Increased from h-16 md:h-20 to h-24 md:h-32
         />
         <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight">
           Innovation in Web3
