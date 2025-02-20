@@ -36,7 +36,7 @@ const Team = () => {
                 alt="Portrait"
                 className="w-24 h-24 object-cover rounded-full mx-auto mb-4"
               />
-              <h3 className="text-xl font-semibold">Neal</h3>
+              <h3 className="text-xl font-semibold">Frank</h3>
               <p className="text-gray-600">CMO</p>
             </div>
           </div>
