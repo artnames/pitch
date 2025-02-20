@@ -15,10 +15,15 @@ const Hero = ({ onLearnMore }: HeroProps) => {
         className="text-center"
       >
         <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight">
-          Artnames
+          Innovation in Web3
         </h1>
+        <div className="flex flex-wrap justify-center gap-4 mb-8">
+          <span className="text-3xl md:text-4xl font-semibold text-purple-600">NexArt</span>
+          <span className="text-3xl md:text-4xl font-semibold text-blue-600">Artnames</span>
+          <span className="text-3xl md:text-4xl font-semibold text-orange-600">GenCo</span>
+        </div>
         <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-          "Where creative expression, identity, and ownership converge in Web3"
+          "Building the future of digital creativity, identity, and ownership"
         </p>
       </motion.div>
       <motion.div
@@ -31,7 +36,7 @@ const Hero = ({ onLearnMore }: HeroProps) => {
           onClick={onLearnMore}
           className="px-8 py-3 bg-black text-white rounded-full font-medium transition-transform hover:scale-105"
         >
-          Learn More
+          Explore Our Projects
         </button>
       </motion.div>
     </section>

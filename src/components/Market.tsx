@@ -10,19 +10,19 @@ const Market = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-5xl font-bold mb-8">Market Opportunity</h2>
-          <div className="grid md:grid-cols-3 gap-8 max-w-4xl mx-auto">
-            <div className="bg-white p-8 rounded-2xl shadow-sm">
-              <h3 className="text-3xl font-bold mb-2">$50B+</h3>
-              <p className="text-gray-600">Digital Art Market</p>
+          <h2 className="text-5xl font-bold mb-12">Market Opportunity</h2>
+          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+            <div className="bg-purple-50 p-8 rounded-2xl">
+              <h3 className="text-3xl font-bold mb-2 text-purple-600">NexArt</h3>
+              <p className="text-gray-600">Tapping into the growing algorithmic art market with social-first sharing</p>
             </div>
-            <div className="bg-white p-8 rounded-2xl shadow-sm">
-              <h3 className="text-3xl font-bold mb-2">500M+</h3>
-              <p className="text-gray-600">Content Creators</p>
+            <div className="bg-blue-50 p-8 rounded-2xl">
+              <h3 className="text-3xl font-bold mb-2 text-blue-600">Artnames</h3>
+              <p className="text-gray-600">Revolutionizing digital identity on Base with dynamic NFT integration</p>
             </div>
-            <div className="bg-white p-8 rounded-2xl shadow-sm">
-              <h3 className="text-3xl font-bold mb-2">25%</h3>
-              <p className="text-gray-600">Annual Growth Rate</p>
+            <div className="bg-orange-50 p-8 rounded-2xl">
+              <h3 className="text-3xl font-bold mb-2 text-orange-600">GenCo</h3>
+              <p className="text-gray-600">Simplifying NFT creation for the next wave of digital creators</p>
             </div>
           </div>
         </motion.div>
