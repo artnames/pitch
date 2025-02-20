@@ -18,8 +18,12 @@ const Team = () => {
               <p className="text-gray-600">CEO & Founder</p>
             </div>
             <div className="bg-gray-50 p-8 rounded-2xl">
-              <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4"></div>
-              <h3 className="text-xl font-semibold">Sarah Williams</h3>
+              <img 
+                src="/lovable-uploads/a344c75c-4884-4a12-8e26-63f9f1ff1c47.png"
+                alt="Portrait"
+                className="w-24 h-24 object-cover rounded-full mx-auto mb-4"
+              />
+              <h3 className="text-xl font-semibold">Joe</h3>
               <p className="text-gray-600">CTO</p>
             </div>
             <div className="bg-gray-50 p-8 rounded-2xl">
