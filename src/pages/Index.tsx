@@ -6,6 +6,7 @@ import Problem from "../components/Problem";
 import Solution from "../components/Solution";
 import Market from "../components/Market";
 import Financial from "../components/Financial";
+import FutureDevelopment from "../components/FutureDevelopment";
 import Team from "../components/Team";
 
 const Index = () => {
@@ -25,6 +26,7 @@ const Index = () => {
       <Solution />
       <Market />
       <Financial />
+      <FutureDevelopment />
       <Team />
     </main>
   );
