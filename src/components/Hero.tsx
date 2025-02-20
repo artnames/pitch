@@ -1,7 +1,11 @@
 
 import { motion } from "framer-motion";
 
-const Hero = () => {
+interface HeroProps {
+  onLearnMore: () => void;
+}
+
+const Hero = ({ onLearnMore }: HeroProps) => {
   return (
     <section className="min-h-screen flex flex-col items-center justify-center px-4 bg-white">
       <motion.div
@@ -23,7 +27,10 @@ const Hero = () => {
         transition={{ delay: 0.5, duration: 0.8 }}
         className="mt-12"
       >
-        <button className="px-8 py-3 bg-black text-white rounded-full font-medium transition-transform hover:scale-105">
+        <button 
+          onClick={onLearnMore}
+          className="px-8 py-3 bg-black text-white rounded-full font-medium transition-transform hover:scale-105"
+        >
           Learn More
         </button>
       </motion.div>
