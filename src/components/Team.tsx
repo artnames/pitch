@@ -23,9 +23,13 @@ const Team = () => {
               <p className="text-gray-600">CTO</p>
             </div>
             <div className="bg-gray-50 p-8 rounded-2xl">
-              <div className="w-24 h-24 bg-gray-200 rounded-full mx-auto mb-4"></div>
-              <h3 className="text-xl font-semibold">Michael Zhang</h3>
-              <p className="text-gray-600">Head of Product</p>
+              <img 
+                src="/lovable-uploads/636350d6-2f9d-4d6b-a08e-d165e31ff0c3.png"
+                alt="Portrait"
+                className="w-24 h-24 object-cover rounded-full mx-auto mb-4"
+              />
+              <h3 className="text-xl font-semibold">Neal</h3>
+              <p className="text-gray-600">CMO</p>
             </div>
           </div>
         </motion.div>
