@@ -32,7 +32,7 @@ const Team = () => {
             </div>
             <div className="bg-gray-50 p-8 rounded-2xl">
               <img 
-                src="/lovable-uploads/636350d6-2f9d-4d6b-a08e-d165e31ff0c3.png"
+                src="/lovable-uploads/8fec67b4-0046-4be2-b4df-b9968f224420.png"
                 alt="Portrait"
                 className="w-24 h-24 object-cover rounded-full mx-auto mb-4"
               />
