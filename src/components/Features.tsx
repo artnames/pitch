@@ -14,7 +14,7 @@ const projects = [
     ]
   },
   {
-    name: "Artnames",
+    name: "ArtNames",
     description: "Name-service platform with dynamic NFT skins on Base",
     color: "blue",
     features: [
@@ -25,7 +25,7 @@ const projects = [
     ]
   },
   {
-    name: "GenCo",
+    name: "NexMint",
     description: "Plug-and-play NFT creation platform",
     color: "orange",
     features: [

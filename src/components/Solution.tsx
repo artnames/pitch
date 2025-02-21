@@ -9,12 +9,12 @@ const Solution = () => {
       color: "purple"
     },
     {
-      name: "Artnames",
+      name: "ArtNames",
       description: "Reimagining digital identities as dynamic, evolving artworks on the blockchain",
       color: "blue"
     },
     {
-      name: "GenCo",
+      name: "NexMint",
       description: "Empowering creators with code-free NFT collection creation and management",
       color: "orange"
     }

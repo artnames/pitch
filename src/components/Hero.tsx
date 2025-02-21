@@ -16,16 +16,16 @@ const Hero = ({ onLearnMore }: HeroProps) => {
       >
         <img 
           src="/lovable-uploads/13fbe3cd-7016-4a53-be8e-05a7dfb4d5e9.png"
-          alt="Artnames Logo"
-          className="h-24 md:h-32 mb-8 mx-auto" // Increased from h-16 md:h-20 to h-24 md:h-32
+          alt="ArtNames Logo"
+          className="h-24 md:h-32 mb-8 mx-auto"
         />
         <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight">
           Innovation in Web3
         </h1>
         <div className="flex flex-wrap justify-center gap-4 mb-8">
           <span className="text-3xl md:text-4xl font-semibold text-purple-600">NexArt</span>
-          <span className="text-3xl md:text-4xl font-semibold text-blue-600">Artnames</span>
-          <span className="text-3xl md:text-4xl font-semibold text-orange-600">GenCo</span>
+          <span className="text-3xl md:text-4xl font-semibold text-blue-600">ArtNames</span>
+          <span className="text-3xl md:text-4xl font-semibold text-orange-600">NexMint</span>
         </div>
         <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
           "Building the future of digital creativity, identity, and ownership"
