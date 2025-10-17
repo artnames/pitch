@@ -10,7 +10,6 @@ import Financial from "../components/Financial";
 import FutureDevelopment from "../components/FutureDevelopment";
 import Team from "../components/Team";
 import Closing from "../components/Closing";
-import ExportPdfButton from "../components/ExportPdfButton";
 
 const Index = () => {
   const featuresRef = useRef<HTMLDivElement>(null);
@@ -21,7 +20,6 @@ const Index = () => {
 
   return (
     <>
-      <ExportPdfButton />
       <main className="bg-white snap-y snap-mandatory">
         <Hero onLearnMore={scrollToFeatures} />
         <Vision />
