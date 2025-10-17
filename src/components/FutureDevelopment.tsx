@@ -12,56 +12,93 @@ const FutureDevelopment = () => {
           transition={{ duration: 0.8 }}
           className="text-center mb-16"
         >
-          <h2 className="text-5xl font-bold mb-6">Future Development</h2>
-          <p className="text-xl text-gray-600">Expanding the Artnames Ecosystem</p>
+          <h2 className="text-5xl font-bold mb-6">Competitive Advantage & Roadmap</h2>
+          <p className="text-xl text-gray-600">What Sets NexArt Apart</p>
         </motion.div>
 
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 gap-8 mb-12">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
+            className="bg-white p-8 rounded-2xl shadow-lg"
           >
-            <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
-              <Rocket className="w-6 h-6 text-blue-600" />
-            </div>
-            <h3 className="text-2xl font-bold mb-4">Artist Collaborations</h3>
-            <p className="text-gray-600">
-              Introducing limited edition names through exclusive partnerships with renowned artists, creating unique digital collectibles.
-            </p>
+            <h3 className="text-2xl font-bold mb-4 text-blue-600">Competitive Advantages</h3>
+            <ul className="space-y-3 text-gray-600">
+              <li className="flex items-start space-x-2">
+                <span className="mt-1 w-2 h-2 rounded-full bg-blue-500 flex-shrink-0"></span>
+                <span>4 creation modes live; 2 more coming (ArtNames & ByX)</span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <span className="mt-1 w-2 h-2 rounded-full bg-blue-500 flex-shrink-0"></span>
+                <span>SoundArt: only sound-to-curated-art platform on-chain</span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <span className="mt-1 w-2 h-2 rounded-full bg-blue-500 flex-shrink-0"></span>
+                <span>Free publishing + 60% creator royalties</span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <span className="mt-1 w-2 h-2 rounded-full bg-blue-500 flex-shrink-0"></span>
+                <span>Foundation Pool bridges traditional artists</span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <span className="mt-1 w-2 h-2 rounded-full bg-blue-500 flex-shrink-0"></span>
+                <span>Gasless onboarding removes crypto friction</span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <span className="mt-1 w-2 h-2 rounded-full bg-blue-500 flex-shrink-0"></span>
+                <span>Equal visibility: every creator featured instantly</span>
+              </li>
+            </ul>
           </motion.div>
 
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
+            className="bg-white p-8 rounded-2xl shadow-lg"
           >
-            <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
-              <Layers className="w-6 h-6 text-blue-600" />
-            </div>
-            <h3 className="text-2xl font-bold mb-4">Blockchain Expansion</h3>
-            <p className="text-gray-600">
-              Exploring integration with additional blockchain networks to provide expanded minting options and wider accessibility.
-            </p>
-          </motion.div>
-
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.6 }}
-            className="bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
-          >
-            <div className="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center mb-6">
-              <ShoppingCart className="w-6 h-6 text-blue-600" />
-            </div>
-            <h3 className="text-2xl font-bold mb-4">Marketplace Launch</h3>
-            <p className="text-gray-600">
-              Development of a dedicated marketplace platform for seamless trading and transfer of ArtNames between users.
-            </p>
+            <h3 className="text-2xl font-bold mb-4 text-purple-600">Roadmap</h3>
+            <ul className="space-y-3 text-gray-600">
+              <li className="flex items-start space-x-2">
+                <span className="mt-1 w-2 h-2 rounded-full bg-purple-500 flex-shrink-0"></span>
+                <span><strong>Q4 2025:</strong> Launch ArtNames mode</span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <span className="mt-1 w-2 h-2 rounded-full bg-purple-500 flex-shrink-0"></span>
+                <span><strong>Q1 2026:</strong> Launch ByX mode — curated multi-randomness collections</span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <span className="mt-1 w-2 h-2 rounded-full bg-purple-500 flex-shrink-0"></span>
+                <span><strong>2026:</strong> Launch NexMint — code-free NFT collection creation</span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <span className="mt-1 w-2 h-2 rounded-full bg-purple-500 flex-shrink-0"></span>
+                <span>Expand Foundation Pool for traditional artist onboarding</span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <span className="mt-1 w-2 h-2 rounded-full bg-purple-500 flex-shrink-0"></span>
+                <span>Mobile optimization for global access</span>
+              </li>
+              <li className="flex items-start space-x-2">
+                <span className="mt-1 w-2 h-2 rounded-full bg-purple-500 flex-shrink-0"></span>
+                <span><strong>2026+:</strong> Multichain expansion (Polygon, Tezos, Solana)</span>
+              </li>
+            </ul>
           </motion.div>
         </div>
+
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.6 }}
+          className="bg-gradient-to-r from-purple-50 to-blue-50 p-8 rounded-2xl text-center"
+        >
+          <h3 className="text-2xl font-bold mb-4">Long-term Vision</h3>
+          <p className="text-xl text-gray-700 italic">
+            "Behance for on-chain generative art"
+          </p>
+        </motion.div>
       </div>
     </section>
   );

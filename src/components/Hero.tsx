@@ -20,15 +20,13 @@ const Hero = ({ onLearnMore }: HeroProps) => {
           className="h-24 md:h-32 mb-8 mx-auto"
         />
         <h1 className="text-6xl md:text-8xl font-bold mb-6 tracking-tight">
-          Innovation in Web3
+          NexArt.xyz
         </h1>
-        <div className="flex flex-wrap justify-center gap-4 mb-8">
-          <span className="text-3xl md:text-4xl font-semibold text-purple-600">NexArt</span>
-          <span className="text-3xl md:text-4xl font-semibold text-blue-600">ArtNames</span>
-          <span className="text-3xl md:text-4xl font-semibold text-orange-600">NexMint</span>
-        </div>
-        <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-          "Building the future of digital creativity, identity, and ownership"
+        <p className="text-2xl md:text-3xl font-semibold text-gray-700 mb-4">
+          Generative Art for Everyone, On-Chain
+        </p>
+        <p className="text-xl md:text-2xl text-gray-600">
+          Founder: Arrotu
         </p>
       </motion.div>
       <motion.div

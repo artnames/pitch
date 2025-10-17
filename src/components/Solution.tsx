@@ -4,18 +4,18 @@ import { motion } from "framer-motion";
 const Solution = () => {
   const solutions = [
     {
-      name: "NexArt",
-      description: "Democratizing digital art creation and distribution through algorithmic generation",
+      name: "Four Creation Modes",
+      description: "Code Mode, SoundArt (only sound-to-curated-art on-chain), Geo Shapes, and Noise — all live and accessible",
       color: "purple"
     },
     {
-      name: "ArtNames",
-      description: "Reimagining digital identities as dynamic, evolving artworks on the blockchain",
+      name: "Free to Publish",
+      description: "No upfront cost or gas fees. Creators keep 60% of every mint. Seamless email login + smart wallet onboarding",
       color: "blue"
     },
     {
-      name: "NexMint",
-      description: "Empowering creators with code-free NFT collection creation and management",
+      name: "Foundation Pool",
+      description: "Funds onboarding of traditional artists into Web3, bridging the gap between traditional and digital art",
       color: "orange"
     }
   ];
@@ -28,7 +28,7 @@ const Solution = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-5xl font-bold mb-12">Our Solutions</h2>
+          <h2 className="text-5xl font-bold mb-12">Solution (NexArt)</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {solutions.map((solution, index) => (
               <div key={index} className={`p-8 rounded-2xl ${
