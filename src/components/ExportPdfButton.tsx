@@ -1,28 +1,74 @@
-import { Download } from "lucide-react";
+import { Download, Loader2 } from "lucide-react";
 import html2pdf from "html2pdf.js";
+import { useState } from "react";
+import { toast } from "@/hooks/use-toast";
 
 const ExportPdfButton = () => {
-  const handleExportPdf = () => {
-    const element = document.querySelector('main');
-    
-    const opt = {
-      margin: 0.5,
-      filename: 'NexArt-Presentation.pdf',
-      image: { type: 'jpeg' as const, quality: 0.98 },
-      html2canvas: { scale: 2, useCORS: true },
-      jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' as const }
-    };
+  const [isExporting, setIsExporting] = useState(false);
 
-    html2pdf().set(opt).from(element).save();
+  const handleExportPdf = async () => {
+    try {
+      setIsExporting(true);
+      const element = document.querySelector('main');
+      
+      if (!element) {
+        toast({
+          title: "Error",
+          description: "Could not find content to export",
+          variant: "destructive"
+        });
+        return;
+      }
+      
+      const opt = {
+        margin: 0.3,
+        filename: 'NexArt-Presentation.pdf',
+        image: { type: 'jpeg' as const, quality: 0.85 },
+        html2canvas: { 
+          scale: 1.5,
+          useCORS: true,
+          logging: false,
+          windowWidth: 1920
+        },
+        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' as const },
+        pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+      };
+
+      await html2pdf().set(opt).from(element).save();
+      
+      toast({
+        title: "Success",
+        description: "PDF exported successfully"
+      });
+    } catch (error) {
+      console.error('PDF export error:', error);
+      toast({
+        title: "Export Failed",
+        description: "There was an error exporting the PDF. Please try again.",
+        variant: "destructive"
+      });
+    } finally {
+      setIsExporting(false);
+    }
   };
 
   return (
     <button
       onClick={handleExportPdf}
-      className="fixed top-6 right-6 z-50 px-6 py-3 bg-blue-600 text-white rounded-full font-medium transition-all hover:bg-blue-700 hover:scale-105 shadow-lg flex items-center gap-2"
+      disabled={isExporting}
+      className="fixed top-6 right-6 z-50 px-6 py-3 bg-blue-600 text-white rounded-full font-medium transition-all hover:bg-blue-700 hover:scale-105 shadow-lg flex items-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
     >
-      <Download size={20} />
-      Export to PDF
+      {isExporting ? (
+        <>
+          <Loader2 size={20} className="animate-spin" />
+          Exporting...
+        </>
+      ) : (
+        <>
+          <Download size={20} />
+          Export to PDF
+        </>
+      )}
     </button>
   );
 };
