@@ -19,6 +19,16 @@ const ExportPdfButton = () => {
         });
         return;
       }
+
+      // Temporarily remove scroll snap for PDF generation
+      const originalClass = element.className;
+      element.classList.remove('snap-y', 'snap-mandatory');
+      
+      // Scroll to top to ensure all content is in view
+      window.scrollTo(0, 0);
+      
+      // Wait a bit for any animations to settle
+      await new Promise(resolve => setTimeout(resolve, 500));
       
       const opt = {
         margin: [0.3, 0.3, 0.3, 0.3] as [number, number, number, number],
@@ -27,28 +37,35 @@ const ExportPdfButton = () => {
         html2canvas: { 
           scale: 2,
           useCORS: true,
-          logging: false,
+          logging: true,
           windowWidth: 1920,
-          scrollY: -window.scrollY,
-          scrollX: -window.scrollX,
+          windowHeight: element.scrollHeight,
+          width: element.scrollWidth,
+          height: element.scrollHeight,
+          x: 0,
+          y: 0,
+          scrollY: 0,
+          scrollX: 0,
           allowTaint: true,
           backgroundColor: '#ffffff'
         },
         jsPDF: { 
           unit: 'in', 
           format: 'letter', 
-          orientation: 'portrait' as const,
+          orientation: 'landscape' as const,
           compress: true
         },
         pagebreak: { 
-          mode: ['avoid-all', 'css', 'legacy'],
-          before: '.page-break-before',
-          after: '.page-break-after',
-          avoid: ['img', 'tr', 'td']
+          mode: ['css', 'legacy'],
+          before: 'section',
+          avoid: ['img']
         }
       };
 
       await html2pdf().set(opt).from(element).save();
+      
+      // Restore original classes
+      element.className = originalClass;
       
       toast({
         title: "Success",
