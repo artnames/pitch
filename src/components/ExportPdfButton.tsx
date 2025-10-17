@@ -21,17 +21,31 @@ const ExportPdfButton = () => {
       }
       
       const opt = {
-        margin: 0.3,
+        margin: [0.3, 0.3, 0.3, 0.3] as [number, number, number, number],
         filename: 'NexArt-Presentation.pdf',
-        image: { type: 'jpeg' as const, quality: 0.85 },
+        image: { type: 'jpeg' as const, quality: 0.9 },
         html2canvas: { 
-          scale: 1.5,
+          scale: 2,
           useCORS: true,
           logging: false,
-          windowWidth: 1920
+          windowWidth: 1920,
+          scrollY: -window.scrollY,
+          scrollX: -window.scrollX,
+          allowTaint: true,
+          backgroundColor: '#ffffff'
         },
-        jsPDF: { unit: 'in', format: 'letter', orientation: 'portrait' as const },
-        pagebreak: { mode: ['avoid-all', 'css', 'legacy'] }
+        jsPDF: { 
+          unit: 'in', 
+          format: 'letter', 
+          orientation: 'portrait' as const,
+          compress: true
+        },
+        pagebreak: { 
+          mode: ['avoid-all', 'css', 'legacy'],
+          before: '.page-break-before',
+          after: '.page-break-after',
+          avoid: ['img', 'tr', 'td']
+        }
       };
 
       await html2pdf().set(opt).from(element).save();
